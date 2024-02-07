@@ -2,16 +2,51 @@
 .theme{
     background: #FFFFFFFF
 }
-/* Navbar */
-.upperpage{
+/* header */
+.pageHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-.navbar{
+.logo{
+    background: none;
+    border: none;
+}
+navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+}
+.navbarItem {
+    background: none;
+    border: none;
+    font-family: manrope , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 1;
+    color: #565D6DFF;
+    padding: 3px 15px;
+}
+.userConnect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userConnectItem{
+    font-family: manrope , sans-serif;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 3px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+#login{
+    background-color: #6D31ED;
+    color: #FFFFFFFF;
+}
+#signup {
+    color: #6D31ED;
+    background: #F3F5FCFF;
 }
