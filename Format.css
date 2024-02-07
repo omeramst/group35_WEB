@@ -1,0 +1,17 @@
+/* Sign in */
+.theme{
+    background: #FFFFFFFF
+}
+/* Navbar */
+.upperpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
