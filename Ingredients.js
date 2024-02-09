@@ -2,7 +2,8 @@
 
 
 const ingredients = [
-    { name: "Kiwi", image: "ingredient1.jpg", type: "Fruits" },
+
+    { name: "Kiwi", image: `photos/Kiwi.png`, type: "Fruits" },
     { name: "Orange", image: "ingredient2.jpg", type: "Fruits" },
     { name: "Raspberry", image: "ingredient5.jpg", type: "Fruits"},
     { name: "Cherry", image: "ingredient4.jpg", type: "Fruits" },
@@ -23,6 +24,7 @@ ingredients.forEach(ingredient => {
 
     const ingredientName = document.createElement('h3');
     ingredientName.textContent = ingredient.name;
+    ingredientName.classList.add('ingredient-name'); // Ofri - Added this line to make the name of the ingredient centered.
 
     const applyButton = document.createElement('button');
     applyButton.textContent = 'Apply';

@@ -155,14 +155,29 @@ label {
     border-style: solid;
     padding: 10px;
     text-align: center;
-    box-sizing: border-box; /* Makes sure that padding and border are included in the element's total width and height */
-}
+ display: flex; /* Added this line */
+    flex-direction: column; /* Added this line */
+    align-items: center; /* Added this line */
+    justify-content: center; /* Added this line */
+    box-sizing: border-box; /* Makes sure that padding and border are included in the element's total width and height */}
 }
 
 .ingredient-card img {
+    height: 132px;
     width: 100%;
-    height: auto;
+    object-fit: contain;
+    text-align: center;
+
 }
+
+.ingredient-name {
+    text-align: center;
+     font-family: Manrope, sans-serif; /* Body */
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+}
+
 
 .IngAddButton {
     background: #6D31EDFF;
@@ -176,7 +191,7 @@ label {
     color: #FFFFFFFF; /* white */
     border: none;
     border-radius: 5px; /* border-m */
-    width: 82px;
+    width: 100%;
     height: 36px;
 }
 
