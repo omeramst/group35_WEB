@@ -4,10 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px; /* Adjust as needed */
 }
 .logo{
     background: none;
     border: none;
+
 }
 .navbar{
     display: flex;
@@ -49,19 +51,25 @@
 }
 /*End Of Header Content*/
 
+
+
+
 /* Ofri - Here is where the Filter Area Starts */
 .filter-container {
     float: left;
-    width: 200px;
-    margin-right: 20px;
+    width: 270px;
+    margin-right: 30px;
     position: absolute;
     top: 100px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: 3px solid #DEE1E6FF; /* neutral-300 */
 }
 
 .filter-header {
     font-weight: 550;
     font-size: 20px;
-    font-family: Manrope, sans-serif;
+    font-family: "Roboto Thin", sans-serif;
     color: #171A1FE5
 }
 
@@ -72,7 +80,7 @@
 
 /* These are the labels of the checkboxes */
 label {
-    font-family: Manrope, sans-serif;
+    font-family: "Roboto Thin", sans-serif;
     border-width: 1px;
     font-size: 14px;
     font-weight: 400;
@@ -101,7 +109,7 @@ label {
   /*position: absolute;*/
   /*top: 458px;*/
   /*left: 1px;*/
-  width: 260px;
+  width: 100%;
   height: 36px;
   padding: 0 12px;
   display: flex;
@@ -130,10 +138,16 @@ label {
   background: #3F0EA6FF; /* primary-700 */
 }
 
+#show-recipes {
+    margin-top: 100px; /* Adjust as needed */
+
+    /* Other styles as needed */
+}
+
 /* Ofri - Here is where the Filter Area Ends */
 
 
-/* Ofri - Here is where the Ingredients Area Starts */
+/* Ofri - Here is where the Ingredients Card Starts */
 .ingredient-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -142,6 +156,7 @@ label {
     padding: 20px;
     height: 100vh; /* Adjust this value as needed to set the height of the grid */
     overflow-y: scroll; /* Makes the grid scrollable */
+    flex-grow: 1;
 }
 
 .ingredient-card {
@@ -172,9 +187,10 @@ label {
 
 .ingredient-name {
     text-align: center;
-     font-family: Manrope, sans-serif; /* Body */
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 18px;
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    line-height: 28px;
     width: 100%;
 }
 
@@ -184,15 +200,88 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Manrope, sans-serif; /* Body */
-    font-size: 12px;
-    font-weight: 400;
+    font-family: "Roboto Thin", sans-serif; /* Body */
+    font-size: 14px;
+    font-weight: 500;
     line-height: 22px;
     color: #FFFFFFFF; /* white */
     border: none;
     border-radius: 5px; /* border-m */
     width: 100%;
     height: 36px;
+}
+
+.ingredient-top-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; /* Adjust this value to increase or decrease the space between the text and the search bar */
+
+}
+
+
+.ingredient-header {
+  position: absolute;
+  top: 120px;
+  left: 320px;
+    font-family: Lexend, Futura;/* Heading */
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #171A1FFF; /* neutral-900 */
+}
+
+.header-search {
+    display: flex;
+    width: 362px; /* Adjust as needed */
+    height: 39px; /* Adjust as needed */
+
+}
+
+.search-input {
+    flex-grow: 1;
+    width: 362px;
+    height: 39px;
+    padding-left: 12px;
+    padding-right: 34px;
+    font-family: Manrope, sans-serif; /* Body */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    background: #FFFFFFFF; /* white */
+    border-radius: 4px 0px 0px 4px; /* border-tl-m border-bl-m */
+    border-width: 1px;
+    border-color: #9095A1FF;
+    outline: none;
+}
+
+.search-button {
+    width: 74px;
+  height: 43px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFFFF; /* white */
+  background: #6D31EDFF; /* primary-500 */
+  opacity: 1;
+  border: none;
+  border-radius: 0px 4px 4px 0px; /* border-tr-none border-br-none */
+  gap: 0px;
+}
+
+.search-button svg {
+    width: 16px; /* Adjust as needed */
+    height: 16px; /* Adjust as needed */
 }
 
 

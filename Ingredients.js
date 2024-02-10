@@ -4,10 +4,22 @@
 const ingredients = [
 
     { name: "Kiwi", image: `photos/Kiwi.png`, type: "Fruits" },
-    { name: "Orange", image: "ingredient2.jpg", type: "Fruits" },
-    { name: "Raspberry", image: "ingredient5.jpg", type: "Fruits"},
-    { name: "Cherry", image: "ingredient4.jpg", type: "Fruits" },
-    { name: "Green_Apple", image: "ingredient3.jpg", type: "Fruits" },
+    { name: "Salmon", image: "photos/salmon.jpeg", type: "Fish" },
+    { name: "Basmati Rice", image: "photos/basmati_rice.jpeg", type: "Pantry Essentials"},
+    { name: "Dijon Mustard", image: "photos/dijon_mustard.jpeg", type: "Pantry Essentials" },
+    { name: "Lettuce", image: "photos/Lettuce.jpeg", type: "Vegetables" },
+    { name: "Chicken Breast", image: "photos/chicken_breast_new.jpeg", type: "Meat" },
+    { name: "Green Apple", image: "photos/Green_Apple.png", type: "Fruits" },
+    { name: "Ground Cumin" , image: "photos/ground_cumin.jpeg", type: "Spices" },
+    { name: "Sweet Paprika", image: "photos/sweet_paprika.jpg", type: "Spices" },
+    { name: "Olive Oil", image: "photos/olive_oil.jpeg", type: "Pantry Essentials" },
+     { name: "Honey", image: "photos/Honey.jpeg", type: "Pantry Essentials" },
+    { name: "Carrot", image: "photos/carrot.jpeg", type: "Vegetables" },
+    { name: "Chicken Egg", image: "photos/chick_egg_final.jpeg", type: "Dairy & Eggs" },
+    { name: "Parmesan Cheese", image: "photos/parmesan_good.jpeg", type: "Dairy & Eggs" },
+    { name: "Strawberry", image: "photos/strawberry_new.jpeg", type: "Fruits" },
+
+
 
 ];
 
@@ -27,7 +39,7 @@ ingredients.forEach(ingredient => {
     ingredientName.classList.add('ingredient-name'); // Ofri - Added this line to make the name of the ingredient centered.
 
     const applyButton = document.createElement('button');
-    applyButton.textContent = 'Apply';
+    applyButton.textContent = 'Add';
     applyButton.classList.add('IngAddButton');
     // Ofri - This event listener will help us later when we will do backend and Add the ingredients to the user's List.
     applyButton.addEventListener('click', () => {
