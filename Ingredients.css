@@ -4,7 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px; /* Adjust as needed */
+    margin-bottom: 80px;
+    background-color: #FFFFFFFF;
+}
+.pageHeader button:hover {
+    cursor: pointer;
 }
 .logo{
     background: none;
@@ -284,4 +288,15 @@ label {
     height: 16px; /* Adjust as needed */
 }
 
+.navbarItem:hover {
+    background-color: #6D31ED; /* You can change the color to your preference */
+    color: #fff; /* Change text color on hover for better visibility */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 4px;
+}
+
+/* Optional: Add transition for smooth effect */
+.navbarItem {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 

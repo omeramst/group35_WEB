@@ -22,6 +22,8 @@
         <div class="userConnect">
             <button class="userConnectItem" id="login" >Login</button>
             <button class="userConnectItem" id="signup" >Sign up</button>
+            <button class="userConnectItem" id="logout" >Logout</button>
+            <button class="userConnectItem" id="userinfo" >User Info</button>
         </div>
     </header>
     <div class = "page">
@@ -35,5 +37,23 @@
         </div>
     </div>
 
+<!--    popup login-->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup" class="close-btn">&times;</span>
+        <form class="loginForm">
+             <img class="logo" src="photos/Logo.png" alt="logo">
+                <h1 class="LoginHeader">Login</h1>
+                <text class="textheader">Fill Email</text>
+                <input type="email" class="input"  name="email" id="email" placeholder="Email">
+                <text class="textheader">Fill Password</text>
+                <input type="password" class="input"  name="password" id="password" placeholder="Password">
+            <button class="close-btn" id="loginSubmit">Login</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="LoginButton.js"></script>
 </body>
 </html>

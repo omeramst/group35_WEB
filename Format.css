@@ -1,18 +1,18 @@
-/* Sign in */
-.theme{
-    background: #FFFFFFFF
-}
 /* header */
 .pageHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFFFFFFF;
+}
+.pageHeader button:hover {
+    cursor: pointer;
 }
 .logo{
     background: none;
     border: none;
 }
-navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +27,7 @@ navbar{
     opacity: 1;
     color: #565D6DFF;
     padding: 3px 15px;
+
 }
 .userConnect{
     display: flex;
@@ -45,8 +46,30 @@ navbar{
 #login{
     background-color: #6D31ED;
     color: #FFFFFFFF;
+
+}
+#logout{
+    background-color: #6D31ED;
+    color: #FFFFFFFF;
+    display: none;
 }
 #signup {
     color: #6D31ED;
     background: #F3F5FCFF;
 }
+#userinfo{
+    color: #6D31ED;
+    background: #F3F5FCFF;
+        Display: none;
+}
+.navbarItem:hover {
+    background-color: #6D31ED;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbarItem {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
