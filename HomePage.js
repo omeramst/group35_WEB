@@ -3,6 +3,9 @@
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
 const signupBtn = document.getElementById("signup");
+const cookifyBtn = document.getElementById("imagelogo");
+const aboutBtn = document.getElementById("aboutus");
+
 
 //check if user is logged in
 window.onload = function () {
@@ -94,4 +97,16 @@ signupBtn.addEventListener("click", function (e) {
     e.preventDefault();
     //variables
     window.location.href = "SignUp.html";
+});
+
+//cookify button
+cookifyBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    location. reload()
+});
+
+//about button
+aboutBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    location. reload()
 });
