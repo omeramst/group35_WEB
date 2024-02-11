@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Ingredients.css">
+</head>
+<body>
+     <header class="pageHeader">
+        <div class="logo">
+            <button class="logo" id="imagelogo" >
+                <img class="logo" src="photos/logo.png" alt="logo">
+            </button>
+        </div>
+        <div class="navbar" >
+    <!--    homepage button-->
+            <button class="navbarItem" id="ingredients"  >Ingredients</button>
+            <button class="navbarItem" id="recipes" >Recipes</button>
+            <button class="navbarItem" id="about us" >About Us</button>
+
+        </div>
+        <div class="userConnect">
+            <button class="userConnectItem" id="login" >Login</button>
+            <button class="userConnectItem" id="signup" >Sign up</button>
+        </div>
+    </header>
+        <div class="ingredient-top-area">
+<!--         Ofri - class="ingredient-top-area" Includes the search bar, the ingredient header and the ingredient cards-->
+             <h2 class="ingredient-header">Ingredients</h2>
+             <div class="header-search">
+                 <input type="text" class="search-input" placeholder="Search...">
+                 <button class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                 </button>
+             </div>
+
+         </div>
+        <div class="main-content">
+            <div class="filter-container">
+                 <h3 class="filter-header">
+                     <img src="photos/List_2.png"  alt=""> Categories
+                 </h3>
+                 <label>
+                     <input type="checkbox" name="category" value="vegetables"> Vegetables
+                 </label>
+                 <br>
+                 <label>
+                     <input type="checkbox" name="category" value="fruits"> Fruits
+                 </label>
+                 <br>
+                 <label>
+                     <input type="checkbox" name="category" value="spices"> Spices
+                 </label>
+                <br>
+                 <label>
+                     <input type="checkbox" name="category" value="fish"> Fish
+                 </label>
+                 <br>
+                 <label>
+                     <input type="checkbox" name="category" value="meat"> Meat
+                 </label>
+                 <br>
+                 <label>
+                     <input type="checkbox" name="category" value="dairy_eggs"> Dairy & Eggs
+                 </label>
+                 <br>
+                 <label>
+                     <input type="checkbox" name="category" value="pantry_essentials"> Pantry Essentials
+                 </label>
+                 <br>
+                 <hr class="line">
+                 <button class="filter-apply-button" type="button">Apply</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="filter-apply-button" id="Show Recipes" type="button">Show Recipes</button>
+             </div>
+
+             <div class="ingredient-grid">
+        <!-- Ofri - Ingredient cards should be added here by the Script I will build -->
+             </div>
+
+
+
+     </div>
+
+
+
+
+
+
+
+    <script src="Ingredients.js"></script>
+</body>
+</html>
