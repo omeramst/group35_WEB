@@ -9,9 +9,9 @@ class userDetails {
         this.foodSensitivity = foodSensitivity || [];
     }
 }
+
 const user = new userDetails()
 const signupbtn = document.querySelector('#btn')
-
 signupbtn.addEventListener('click', function(e){
     e.preventDefault()
     user.username = document.querySelector('#username').value
@@ -48,15 +48,19 @@ signupbtn.addEventListener('click', function(e){
               <option class="option" value="soy">Soy</option>
               <option class="option" value="shellfish">Shellfish</option>
                  </select>
-
             <button type="submit" id="signup">Sign Up</button>
+            <p>Already have an account? <a href="HomePage.html">Home page</a></p>
             `;
         const signup = document.querySelector('#signup');
         signup.addEventListener('click', function(e){
             e.preventDefault();
             user.favoriteCuisine = Array.from(document.querySelector('#favoriteCuisine').selectedOptions).map(option => option.value);
             user.foodSensitivity = Array.from(document.querySelector('#foodSensitivity').selectedOptions).map(option => option.value);
-            console.log(user);
+
+            //store user in local storage
+            localStorage.setItem('user', user.email);
+            //redirect to home page
+            window.location.href = "HomePage.html";
 
         })
     }
