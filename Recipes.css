@@ -1,0 +1,304 @@
+/* Sign in */
+.theme{
+    background: #FFFFFFFF
+}
+
+/* header */
+.pageHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFFFF;
+    min-width: 630PX;
+}
+.pageHeader button:hover {
+    cursor: pointer;
+}
+.logo{
+    background: none;
+    border: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbarItem {
+    background: none;
+    border: none;
+    font-family: manrope , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 1;
+    color: #565D6DFF;
+    padding: 3px 15px;
+
+}
+.userConnect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userConnectItem{
+    font-family: manrope , sans-serif;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 3px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+#login{
+    background-color: #6D31ED;
+    color: #FFFFFFFF;
+    display: none;
+
+}
+#logout{
+    background-color: #6D31ED;
+    color: #FFFFFFFF;
+    display: none;
+}
+#signup {
+    color: #6D31ED;
+    background: #F3F5FCFF;
+    display: none;
+}
+#userinfo{
+    color: #6D31ED;
+    background: #F3F5FCFF;
+        Display: none;
+}
+.navbarItem:hover {
+    background-color: #6D31ED;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.navbarItem {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/*!* page *!*/
+/*.page{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin-top: 100px;*/
+/*    font-family: manrope , sans-serif;*/
+/*    animation-name: page;*/
+/*    animation-duration: 1.5s;*/
+/*    animation-fill-mode: forwards;*/
+/*}*/
+
+
+
+/*login form*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background: #fff;
+
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    font-family: manrope , sans-serif;
+    color: #565D6DFF;
+}
+.loginForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.loginForm input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.loginForm button {
+    background-color: #6626e7;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.loginForm button:hover {
+    background-color: #3B1683FF;
+}
+.LoginHeader{
+    color: #333;
+    font-size: 24px;
+}
+.close-btn:hover {
+    cursor: pointer;
+}
+
+
+
+.filters-cont {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 270px;
+    margin-right: 30px;
+    position: absolute;
+    top: 100px;
+    margin-top: 25px;
+    border-radius: 4px;
+    border: 3px solid #DEE1E6FF; /* neutral-300 */
+}
+
+.filter-headers {
+    font-family: Manrope; /* Body */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #171A1FFF;
+    margin-left: 5px;
+}
+
+/* These are the labels of the checkboxes */
+label {
+    font-family: "Roboto Thin", sans-serif;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: 1;
+
+}
+
+/*Line starts here - Ofri*/
+.line {
+    width: 100%;  /* adjust as needed */
+    border-width: 1.0px;
+    border-color: #DEE1E6FF; /* neutral-300 */
+    border-style: solid;
+}
+
+/*Ofri - Dynamic text above slider that javascript changes*/
+#sliderValue {
+    color: #171A1FFF; /* neutral-900 */
+    font-family: "Roboto Thin", sans-serif;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+/* Slider */
+.slider {
+    width: 90%; /* make the slider 90% of the width of its parent */
+    margin: 0 auto; /* center the slider */
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+/* Slider input */
+.slider-input {
+    width: 100%;
+    height: 6px;
+    background: #D3C1FAFF; /* primary-200 */
+    border-radius: 3px;
+    appearance: none; /* remove default styles */
+    outline: none;
+}
+
+.slider-input::-webkit-slider-thumb {
+    appearance: none; /* remove default styles */
+    width: 22px;
+    height: 22px;
+    background: #FFFFFFFF; /* white */
+    border-radius: 100%;
+    border: 1px solid #6D31EDFF; /* primary-500 */
+    box-shadow: 0px 0px 1px #6d31ed, 0px 0px 2px #6d31ed; /* shadow-xs */
+}
+
+.slider-input::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: #FFFFFFFF; /* white */
+    border-radius: 100%;
+    border: 1px solid #6D31EDFF; /* primary-500 */
+    box-shadow: 0px 0px 1px #6d31ed, 0px 0px 2px #6d31ed; /* shadow-xs */
+}
+
+.slider-input::-ms-thumb {
+    width: 22px;
+    height: 22px;
+    background: #FFFFFFFF; /* white */
+    border-radius: 100%;
+    border: 1px solid #6D31EDFF; /* primary-500 */
+    box-shadow: 0px 0px 1px #6d31ed, 0px 0px 2px #6d31ed; /* shadow-xs */
+}
+
+.slider-input::-moz-range-progress {
+    background: #6D31EDFF; /* primary-500 */
+}
+
+.slider-input::-ms-fill-lower {
+    background: #6D31EDFF; /* primary-500 */
+}
+
+/* Filter apply button*/
+.filter-apply-button {
+  /*position: absolute;*/
+  /*top: 458px;*/
+  /*left: 1px;*/
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Manrope, sans-serif; /* Body */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFFFFFFF; /* white */
+  background: #6D31EDFF; /* primary-500 */
+  opacity: 1;
+  border: none;
+  border-radius: 4px; /* border-m */
+}
+
+/* Hover */
+.filter-apply-button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #5113D7FF; /* primary-600 */
+}
+
+/* Pressed */
+.filter-apply-button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #3F0EA6FF; /* primary-700 */
+}
+
+.filter-cont-header {
+    font-family: Lexend; /* Heading */
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #171A1FFF; /* neutral-900 */
+
+}
