@@ -141,3 +141,41 @@ slider.oninput = function() {
   // Ofri - When the slider's value changes, update the output element's text to match the slider's current value
   output.innerHTML = this.value;
 }
+
+
+
+// Ofri - The following code is responsible for the autofill of the grid using recipe cards.
+
+const recipes = [
+    { name: "Simple Strawberry Cake", image: "photos/Cake.jpeg", difficulty: "Normal" , servings: 4 , cuisine: "General" },
+    { name: "Paprika Chicken With Rice", image: "photos/Pap-Chicken.png", difficulty: "Easy" , servings: 2 , cuisine: "Mediterranean" },
+    // other recipes...
+];
+
+function createRecipeCards() {
+    const recipesGrid = document.querySelector('.recipes-grid');
+
+    recipes.forEach(recipe => {
+        const recipeCard = document.createElement('div');
+        recipeCard.className = 'recipe-card';
+
+        const recipeImage = document.createElement('img');
+        recipeImage.src = recipe.image;
+        recipeCard.appendChild(recipeImage);
+
+        const recipeName = document.createElement('h2');
+        recipeName.className = 'recipe-name';
+        recipeName.textContent = recipe.name;
+        recipeCard.appendChild(recipeName);
+
+        const viewButton = document.createElement('button');
+        viewButton.textContent = 'View';
+        viewButton.className = 'view-button';
+        recipeCard.appendChild(viewButton);
+
+        recipesGrid.appendChild(recipeCard);
+    });
+}
+
+window.onload = createRecipeCards;
+
