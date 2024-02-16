@@ -98,3 +98,4 @@ function getSelectedOptions(selectId) {
         .map(option => option.value);
     return selectedOptions;
 }
+

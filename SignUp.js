@@ -56,9 +56,10 @@ signupbtn.addEventListener('click', function(e){
             e.preventDefault();
             user.favoriteCuisine = Array.from(document.querySelector('#favoriteCuisine').selectedOptions).map(option => option.value);
             user.foodSensitivity = Array.from(document.querySelector('#foodSensitivity').selectedOptions).map(option => option.value);
-
+            //user details to user object
+            const userFinal = new User(user.username, user.password, user.email, user.favoriteCuisine, user.foodSensitivity);
             //store user in local storage
-            localStorage.setItem('user', user.email);
+            localStorage.setItem('user', JSON.stringify(userFinal));
             //redirect to home page
             window.location.href = "HomePage.html";
 
@@ -66,9 +67,16 @@ signupbtn.addEventListener('click', function(e){
     }
 })
 
+class User {
+    constructor(username, password, email, cuisine, sensitive, saved) {
+        this.username = username || '';
+        this.password = password || '';
+        this.email = email || '';
+        this.cuisine = cuisine || [];
+        this.sensitive = sensitive || [];
+        this.saved = saved || [];
+    }
+}
 
-
-
-//sign button
 
 

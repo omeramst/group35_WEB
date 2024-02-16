@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookify</title>
+    <link rel="stylesheet" href="Recepie.css">
+</head>
+<body>
+<header class="pageHeader">
+    <div class="logo">
+        <button class="logo" id="imagelogo">
+            <img class="logo" src="photos/logo.png" alt="logo">
+        </button>
+    </div>
+    <div class="navbar">
+        <!--    homepage button-->
+        <button class="navbarItem" id="ingredients">Ingredients</button>
+        <button class="navbarItem" id="recipes">Recipes</button>
+        <button class="navbarItem" id="aboutus">About Us</button>
+
+    </div>
+    <div class="userConnect">
+        <button class="userConnectItem" id="login">Login</button>
+        <button class="userConnectItem" id="signup">Sign up</button>
+        <button class="userConnectItem" id="logout">Logout</button>
+        <button class="userConnectItem" id="userinfo">User Info</button>
+    </div>
+</header>
+<div class="RecipiePage">
+    <div class="infoContainer">
+        <h1 class="infoContainer" id="RecepieHeader">Simple Strawberry Cake</h1>
+        <p class="infoContainer" id="RecepieDescription">A simple and tasty strawberry cake, fluffy and creamy.</p>
+        <text class="infoContainer" id="RecepieServing"><strong>serving:</strong> 4</text>
+        <h4 class="infoContainer" id="ingredientTitle">Ingredients:</h4>
+        <ul class="infoContainer" id="RecepieIngredients">
+            <li class="infoContainer" id="li1">2 strawberries</li>
+            <li class="infoContainer" id="li2">1/2 cup sugar</li>
+            <li class="infoContainer" id="li3">Ingredient 3</li>
+            <li class="infoContainer" id="li4">4 cups flour</li>
+            <li class="infoContainer" id="li5">1/4 teaspoon salt</li>
+            <li class="infoContainer" id="li6">5 teaspoons baking powder</li>
+            <li class="infoContainer" id="li7">1/4 cups butter</li>
+            <li class="infoContainer" id="li8">3 cups whipping cream</li>
+            <li class="infoContainer" id="li9">1/4 teaspoon vanilla extract</li>
+
+        </ul>
+    </div>
+    <div class="Recipie">
+        <img class="Recipie" id="RecepieImage" src="photos/Cake.jpeg" alt="Recepie">
+        <div class="Recipie step1">
+            <h2 class="Recipie step1" id="step1">Step 1</h2>
+            <p class="Recipie step1" id="step1Description">Pick over and hull strawberries. Cut in half or slice,
+                depending on size. Gently crush about a quarter of
+                the berries with a fork to release their juices. Mix with remaining berries and the ½/2 cup of sugar,
+                adding
+                more sugar if necessary. Set aside, covered, for about half an hour to develop flavor.</p>
+        </div>
+        <div class="Recipie step2">
+            <h2 class="Recipie step2" id="step2">Step 2</h2>
+            <p class="Recipie step2" id="step2Description">Preheat oven to 450 degrees.</p>
+        </div>
+        <div class="Recipie step3">
+            <h2 class="Recipie step3" id="step3">Step 3</h2>
+            <p class="Recipie step3" id="step3Description">Into a large mixing bowl, sift together flour, 3 tablespoons
+                sugar, salt and baking powder. Add 3 cup of
+                softened butter, and rub into dry ingredients as for pastry. Add 1 ¼4 cups cream, and mix to a soft
+                dough.
+                Knead the dough for one minute on a lightly floured pastry board, then roll it out to about ½-inch
+                thickness. Using a 3-inch biscuit cutter, cut an even number of rounds - 2 rounds per serving.</p>
+        </div>
+        <div class="Recipie step4">
+            <h2 class="Recipie step4" id="step4">Step 4</h2>
+            <p class="Recipie step4" id="step4Description">Use a little of the butter to grease a baking sheet. Place
+                half the rounds on it. Melt remaining butter and
+                brush a little on the rounds; place remaining rounds on top. Bake for 10 to 15 minutes, or until golden
+                brown.</p>
+        </div>
+        <div class="Recipie step5">
+            <h2 class="Recipie step5" id="step5">Step 5</h2>
+            <p class="Recipie step5" id="step5Description">Use a little of the butter to grease a baking sheet. Place
+                half the rounds on it. Melt remaining butter and
+                brush a little on the rounds; place remaining rounds on top. Bake for 10 to 15 minutes, or until golden
+                brown.</p>
+        </div>
+        <div class="Recipie step6">
+            <h2 class="Recipie step6" id="step6">Step 6</h2>
+            <p class="Recipie step6" id="step6Description">Beat remaining cream until it thickens. Add vanilla. Beat
+                again just until thick.</p>
+        </div>
+    </div>
+</div>
+<!--    popup login-->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span id="closePopup" class="close-btn">&times;</span>
+        <form class="loginForm">
+             <img class="logo" src="photos/Logo.png" alt="logo">
+                <h1 class="LoginHeader">Login</h1>
+                <text class="textheader">Fill Email</text>
+                <input type="email" class="input"  name="email" id="email" placeholder="Email">
+                <text class="textheader">Fill Password</text>
+                <input type="password" class="input"  name="password" id="password" placeholder="Password">
+            <button class="close-btn" id="loginSubmit">Login</button>
+        </form>
+
+    </div>
+</div>
+<script src="Recepie.js"></script>
+</body>
+</html>
