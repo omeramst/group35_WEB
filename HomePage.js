@@ -7,6 +7,8 @@ const cookifyBtn = document.getElementById("imagelogo");
 const aboutBtn = document.getElementById("aboutus");
 const userinfobtn = document.getElementById("userinfo");
 const user = JSON.parse(localStorage.getItem('user'));
+const recipes = document.getElementById("recipes");
+const ingredients = document.getElementById("ingredients");
 
 //check if user is logged in
 window.onload = function () {
@@ -118,6 +120,17 @@ aboutBtn.addEventListener("click", function (e) {
 userinfobtn.addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "UserInfo.html";
+});
+
+//recipe button
+recipes.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "Recipes.html";
+});
+//ingredient button
+ingredients.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "Ingredients.html";
 });
 
 class User {
