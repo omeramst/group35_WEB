@@ -133,11 +133,11 @@ label {
   border-radius: 4px; /* border-m */
 }
 
-/*!* Hover *!*/
-/*.filter-apply-button:hover {*/
-/*  color: #FFFFFFFF; !* white *!*/
-/*  background: #5113D7FF; !* primary-600 *!*/
-/*}*/
+/* Hover */
+.filter-apply-button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #5113D7FF; /* primary-600 */
+}
 
 /* Pressed */
 .filter-apply-button:hover:active {
@@ -146,9 +146,7 @@ label {
 }
 
 #show-recipes {
-    margin-top: 100px; /* Adjust as needed */
-
-    /* Other styles as needed */
+    margin-top: 100px;
 }
 
 /* Ofri - Here is where the Filter Area Ends */
@@ -177,10 +175,10 @@ label {
     border-style: solid;
     padding: 10px;
     text-align: center;
- display: flex; /* Added this line */
-    flex-direction: column; /* Added this line */
-    align-items: center; /* Added this line */
-    justify-content: center; /* Added this line */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     box-sizing: border-box; /* Makes sure that padding and border are included in the element's total width and height */}
 }
 
@@ -233,7 +231,7 @@ label {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    gap: 20px; /* Adjust this value to increase or decrease the space between the text and the search bar */
+    gap: 20px;
 
 
 }
@@ -245,18 +243,18 @@ label {
     margin-left: 40px;
     top: 120px;
     left: 320px;
-    font-family: Lexend, Futura;/* Heading */
+    font-family: Lexend, Futura;
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
-    color: #171A1FFF; /* neutral-900 */
+    color: #171A1FFF;
 
 }
 
 .header-search {
     display: flex;
-    width: 362px; /* Adjust as needed */
-    height: 39px; /* Adjust as needed */
+    width: 362px;
+    height: 39px;
 
 }
 
@@ -266,12 +264,12 @@ label {
     height: 39px;
     padding-left: 12px;
     padding-right: 34px;
-    font-family: Manrope, sans-serif; /* Body */
+    font-family: Manrope, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    background: #FFFFFFFF; /* white */
-    border-radius: 4px 0px 0px 4px; /* border-tl-m border-bl-m */
+    background: #FFFFFFFF;
+    border-radius: 4px 0px 0px 4px;
     border-width: 1px;
     border-color: #9095A1FF;
     outline: none;
@@ -284,11 +282,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFFFF; /* white */
+    color: #FFFFFFFF;
     background: #6D31EDFF;
     opacity: 1;
     border: none;
-    border-radius: 0px 4px 4px 0px; /* border-tr-none border-br-none */
+    border-radius: 0px 4px 4px 0px;
     gap: 0px;
     cursor: pointer;
 
@@ -309,13 +307,13 @@ button {
 }
 
 .navbarItem:hover {
-    background-color: #6D31ED; /* You can change the color to your preference */
-    color: #fff; /* Change text color on hover for better visibility */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #6D31ED;
+    color: #fff;
+    cursor: pointer;
     border-radius: 4px;
 }
 
-/* Optional: Add transition for smooth effect */
+
 .navbarItem {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
