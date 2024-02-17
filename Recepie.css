@@ -1,9 +1,10 @@
 /* header */
-body{
+body {
     margin: 0;
     padding: 0;
 
 }
+
 .pageHeader {
     display: flex;
     justify-content: space-between;
@@ -104,39 +105,73 @@ body{
     margin-top: 30px;
     font-family: manrope, sans-serif;
 }
-.infoContainer{
+
+.infoContainer {
     display: flex;
     flex-direction: column;
     margin-Right: 10px;
     margin-left: 10px;
 }
-.Recipie{
-        margin-Right: 10px;
+
+.Recipie {
+    margin-Right: 10px;
 
 }
 
-h4{
+h4 {
     margin-bottom: 0px;
 }
+
 #RecepieIngredients {
     padding: 0;
     margin: 5PX;
     list-style-type: none;
 }
+
 #RecepieIngredients li::before {
     content: "• "; /* You can replace the bullet symbol with any symbol you prefer */
 }
+
 #RecepieIngredients li {
     display: inline-block;
     margin-bottom: 5px;
 }
-#RecepieImage{
+
+#RecepieImage {
     width: 400px;
     height: 400px;
     border-radius: 10px;
 }
+
 h1 {
     margin-bottom: 0px;
+}
+
+.star {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+.star.checked {
+    background-color: gold;
+}
+.save{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+#save{
+    margin-top: 12px;
 }
 
 
@@ -152,6 +187,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .popup-content {
     background: #fff;
 
@@ -159,9 +195,10 @@ h1 {
     border-radius: 5px;
     text-align: center;
     position: relative;
-    font-family: manrope , sans-serif;
+    font-family: manrope, sans-serif;
     color: #565D6DFF;
 }
+
 .loginForm {
     max-width: 300px;
     margin: 0 auto;
@@ -185,10 +222,13 @@ h1 {
 .loginForm button:hover {
     background-color: #3B1683FF;
 }
-.LoginHeader{
+
+.LoginHeader {
     color: #333;
     font-size: 24px;
 }
+
 .close-btn:hover {
     cursor: pointer;
 }
+

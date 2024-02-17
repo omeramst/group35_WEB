@@ -147,8 +147,8 @@ slider.oninput = function() {
 // Ofri - The following code is responsible for the autofill of the grid using recipe cards.
 
 const recipes = [
-    { name: "Simple Strawberry Cake", image: "photos/Cake.jpeg", difficulty: "Normal" , servings: 4 , cuisine: "General" },
-    { name: "Paprika Chicken With Rice", image: "photos/Pap-Chicken.png", difficulty: "Easy" , servings: 2 , cuisine: "Mediterranean" },
+    { id: 1, name: "Simple Strawberry Cake", image: "photos/Cake.jpeg", difficulty: "Normal" , servings: 4 , cuisine: "General" },
+    { id: 2, name: "Paprika Chicken With Rice", image: "photos/Pap-Chicken.png", difficulty: "Easy" , servings: 2 , cuisine: "Mediterranean" },
     // other recipes...
 ];
 

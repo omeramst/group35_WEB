@@ -1,3 +1,17 @@
+class Recipe {
+    constructor(id, title, description, ingredients, instructions, image, cuisine, servings, sensitive) {
+        this.id = id || '';
+        this.title = title || ''
+        this.ingredients = ingredients || [];
+        this.instructions = instructions || [];
+        this.servings = servings || 0;
+        this.image = image || '';
+        this.cuisine = cuisine || '';
+        this.sensitive = sensitive || [];
+        this.description = description || '';
+    }
+}
+
 //consts and event listeners
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
@@ -6,7 +20,10 @@ const cookifyBtn = document.getElementById("imagelogo");
 const aboutBtn = document.getElementById("aboutus");
 const userinfobtn = document.getElementById("userinfo");
 const user = JSON.parse(localStorage.getItem('user'));
-
+const favorite = document.getElementById('FavoriteButton')
+localStorage.setItem('recipe', '1');
+const recipe = new Recipe(); //here we would get the recipe from the db by the id
+const recipeid = JSON.parse(localStorage.getItem('recipe'));
 
 //check if user is logged in
 window.onload = function () {
@@ -101,6 +118,7 @@ loginBtn.addEventListener("click", function (e) {
             user.email = email;
             user.password = password;
             localStorage.setItem('user', JSON.stringify(user));
+            location.reload();
         }
     });
 });
@@ -115,3 +133,18 @@ class User {
         this.saved = saved || [];
     }
 }
+
+favorite.addEventListener('click', function () {
+    if (localStorage.getItem('user')) {
+        favorite.classList.toggle('checked');
+        if (favorite.classList.contains('checked') || null) {
+            user.saved.push(recipeid);
+            console.log(user.saved);
+        } else {
+            user.saved.pop(recipeid);
+            console.log(user.saved);
+        }
+    }
+});
+
+
