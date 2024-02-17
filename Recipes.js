@@ -171,6 +171,9 @@ function createRecipeCards() {
         const viewButton = document.createElement('button');
         viewButton.textContent = 'View';
         viewButton.className = 'view-button';
+        viewButton.addEventListener('click', () => {
+            window.location.href = `Recepie.html?id=${recipe.id}`;  // navigate to new page with recipe ID in URL
+        });
         recipeCard.appendChild(viewButton);
 
         recipesGrid.appendChild(recipeCard);
