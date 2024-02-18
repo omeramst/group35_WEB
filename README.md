@@ -33,11 +33,13 @@ Users functionality is accessible from all pages.
 - The filtering functionality will be brought to life when the backend is implemented in the next stage of the project.
 
 ### JavaScript
+- JavaScript is used in this project to handle and validate user input in forms and generate dynamic content.
 - Recipes & Ingredients - JavaScript plays a crucial role in the functionality of the recipe and ingredient grids, It is used to dynamically generate recipe/ingredient cards based on the data in the ‘ingredients’/‘recipes’ array. It also handles user interactions like clicking on the ‘view’ button of a recipe card
 - Specific Recepie page - JavaScript is used to handle the ‘add to favorites’ button click event, allowing the user to save the recipe to their favorites list.
 - Homepage: JavaScript is used to handle user interactions such as clicking on buttons (like the “cookify” button) and redirecting the user to the appropriate webpage. It also manages the user’s login status and adjusts the display of the navigation bar accordingly.
 - SignUp: JavaScript is used to handle the ‘signup’ button click event, redirecting the user to the “SignUp.html” page for account creation.
 - UserInfo: JavaScript is used to handle the ‘userinfo’ button click event, redirecting the user to the “UserInfo.html” page where they can view and manage their personal information.
+- JavaScript can facilitate communication between the ingredient grid and the recipe generation functionality. It can pass the selected ingredients to other parts of the webpage or trigger actions based on user interactions, ensuring a cohesive and connected user experience.
 ### CSS
 CSS Animations and Layouts:
 - Flexbox is extensively used in the project to align and distribute space among items in a container. It’s used in the header, navbar, login form, and more.
