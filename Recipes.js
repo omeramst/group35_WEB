@@ -1,3 +1,7 @@
+//this is the template for the recipe page
+// now there is only one recipe, but in the future there will be more
+//will be changed to a loop that will create a recipe card for each recipe in the database
+
 //consts and event listeners
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
@@ -5,28 +9,37 @@ const signupBtn = document.getElementById("signup");
 const cookifyBtn = document.getElementById("imagelogo");
 const aboutBtn = document.getElementById("aboutus");
 const userinfobtn = document.getElementById("userinfo");
+const recipesBut = document.getElementById("recipes");
+const ingredients = document.getElementById("ingredients");
 const user = JSON.parse(localStorage.getItem('user'));
 
 
 //check if user is logged in
 window.onload = function () {
+    console.log('first check');
     const logoutbutn = document.getElementById("logout");
     const userinfobtn = document.getElementById("userinfo");
     const loginbutn = document.getElementById("login");
     const signupbutn = document.getElementById("signup");
     const user = JSON.parse(localStorage.getItem('user'));
+    console.log('first check');
     if (user) {
+        console.log('if check');
         loginbutn.style.display = "none";
         signupbutn.style.display = "none";
         logoutbutn.style.display = "block";
         userinfobtn.style.display = "block";
     } else {
+        console.log('else check');
         loginbutn.style.display = "block";
         signupbutn.style.display = "block";
         logoutbutn.style.display = "none";
         userinfobtn.style.display = "none";
     }
+    //create recipe cards
+    createRecipeCards();
 }
+
 //login button
 loginBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -79,6 +92,19 @@ loginBtn.addEventListener("click", function (e) {
     });
 });
 
+//ingredients button
+ingredients.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "Ingredients.html";
+});
+
+//recipes button
+recipesBut.addEventListener("click", function (e) {
+    e.preventDefault();
+    location.reload()
+});
+
+
 //logout button
 logoutBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -105,13 +131,13 @@ signupBtn.addEventListener("click", function (e) {
 //cookify button
 cookifyBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    location.reload()
+    window.location.href = "HomePage.html";
 });
 
 //about button
 aboutBtn.addEventListener("click", function (e) {
     e.preventDefault();
-    location.reload()
+    window.location.href = "HomePage.html";
 });
 
 //user info button
@@ -180,5 +206,5 @@ function createRecipeCards() {
     });
 }
 
-window.onload = createRecipeCards;
+
 

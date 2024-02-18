@@ -44,6 +44,8 @@ const user = JSON.parse(localStorage.getItem('user'));
 const submit = document.getElementById("submit");
 const aboutus = document.getElementById("aboutus");
 const cookify = document.getElementById("imagelogo");
+const recipes = document.getElementById("recipes");
+const ingredients = document.getElementById("ingredients");
 
 //function to logout
 logoutbutn.addEventListener("click", function () {
@@ -89,7 +91,16 @@ submit.addEventListener("click", function (e) {
     }, 1000);
 
 });
-
+//ingredient button
+ingredients.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "Ingredients.html";
+});
+//recipes button
+recipes.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "Recipes.html";
+});
 
 function getSelectedOptions(selectId) {
     const selectElement = document.getElementById(selectId);

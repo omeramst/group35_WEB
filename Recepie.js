@@ -19,6 +19,8 @@ const signupBtn = document.getElementById("signup");
 const cookifyBtn = document.getElementById("imagelogo");
 const aboutBtn = document.getElementById("aboutus");
 const userinfobtn = document.getElementById("userinfo");
+const recipes = document.getElementById("recipes");
+const ingredients = document.getElementById("ingredients");
 const user = JSON.parse(localStorage.getItem('user'));
 const favorite = document.getElementById('FavoriteButton')
 localStorage.setItem('recipe', '1');
@@ -147,4 +149,14 @@ favorite.addEventListener('click', function () {
     }
 });
 
+//recipies button
+recipes.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.href = "Recipes.html";
+});
 
+//ingredients button
+ingredients.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.href = "Ingredients.html";
+});

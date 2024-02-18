@@ -6,9 +6,9 @@ const signupBtn = document.getElementById("signup");
 const cookifyBtn = document.getElementById("imagelogo");
 const aboutBtn = document.getElementById("aboutus");
 const userinfobtn = document.getElementById("userinfo");
-const user = JSON.parse(localStorage.getItem('user'));
 const recipes = document.getElementById("recipes");
 const ingredients = document.getElementById("ingredients");
+const user = JSON.parse(localStorage.getItem('user'));
 
 //check if user is logged in
 window.onload = function () {
