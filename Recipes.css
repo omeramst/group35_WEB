@@ -81,20 +81,6 @@
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/*!* page *!*/
-/*.page{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    margin-top: 100px;*/
-/*    font-family: manrope , sans-serif;*/
-/*    animation-name: page;*/
-/*    animation-duration: 1.5s;*/
-/*    animation-fill-mode: forwards;*/
-/*}*/
-
-
-
 /*login form*/
 .popup {
     display: none;
