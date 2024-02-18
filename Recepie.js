@@ -1,3 +1,8 @@
+//this is the template for the recipe page
+// now there is only one recipe, but in the future there will be more
+//will be changed to a loop that will create a recipe card for each recipe in the database
+
+
 class Recipe {
     constructor(id, title, description, ingredients, instructions, image, cuisine, servings, sensitive) {
         this.id = id || '';
