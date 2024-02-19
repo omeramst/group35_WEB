@@ -14,7 +14,6 @@ body {
     border-bottom-color: #6D31ED;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-
 }
 
 .pageHeader button:hover {
@@ -111,6 +110,7 @@ body {
     flex-direction: column;
     margin-Right: 10px;
     margin-left: 10px;
+    width: 350px;
 }
 
 .Recipie {
@@ -172,6 +172,14 @@ h1 {
 }
 #save{
     margin-top: 12px;
+}
+
+.RecipieStep h2{
+    margin-bottom: 0px;
+}
+.RecipieStep p{
+    margin: 0px;
+    margin-right: 150px;
 }
 
 

@@ -70,7 +70,7 @@ The Recipe Page displays a list of recipes that users can interact with. Feature
 The recipe details page displays the recipe's name, image, ingredients, and instructions. Users can also save the recipe to their favorites list.
 The recipe is template based, and the data for a specific recipe will be fetched.
 It will be customized via JavaScript to display the relevant recipe details.
-Since the backend will be added in the next stage of the project. The recipe page currently shows the same recipe page for all the recipes.
+Since the backend will be added in the next stage of the project. 
 - Favorites - The user can save the recipe to his favorites list on this page.
 
 ### User Information Page:
